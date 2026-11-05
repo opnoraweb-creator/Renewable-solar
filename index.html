@@ -1,724 +1,992 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Solar Company in Pali Rajasthan | Solar System Renewable Energy Pvt. Ltd.</title>
+<title>Solar Company in Pali Rajasthan | Solar System Renewable Energy Pvt. Ltd.</title>
 
-  <meta name="description" content="Solar System Renewable Energy Pvt. Ltd. provides residential, commercial and industrial solar panel installation, rooftop solar, solar inverter and battery solutions in Pali, Rajasthan. Get in touch for a site visit.">
+<meta name="description" content="Solar System Renewable Energy Pvt. Ltd. provides residential, commercial and industrial solar panel installation, rooftop solar, solar inverter and battery solutions in Pali, Rajasthan. Contact us for a site visit.">
 
-  <meta name="keywords" content="Solar Company in Pali, Solar Panel Pali Rajasthan, Solar Installation Near Me, Rooftop Solar Pali, Residential Solar Pali, Commercial Solar Pali, Industrial Solar Rajasthan, PM Surya Ghar Pali, Solar Inverter Pali">
+<meta name="keywords" content="Solar Company in Pali, Solar Panel Pali Rajasthan, Solar Installation Near Me, Rooftop Solar Pali, Residential Solar Pali, Commercial Solar Pali, Industrial Solar Rajasthan, PM Surya Ghar Pali, Solar Inverter Pali">
 
-  <meta name="author" content="Solar System Renewable Energy Pvt. Ltd.">
-  <meta name="theme-color" content="#ffffff">
+<meta name="author" content="Solar System Renewable Energy Pvt. Ltd.">
+<meta name="theme-color" content="#ffffff">
 
-  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
-  <link rel="apple-touch-icon" href="assets/icons/favicon.png">
+<link rel="icon" type="image/png" href="assets/icons/favicon.png">
+<link rel="apple-touch-icon" href="assets/icons/favicon.png">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
 
-  <style>
-    /* Header social links */
+<style>
+/* HEADER SOCIAL */
+.header-social {
+    display:flex;
+    align-items:center;
+    gap:9px;
+}
+
+.social-icon {
+    width:43px;
+    height:43px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    flex-shrink:0;
+}
+
+.instagram-icon {
+    color:#fff;
+    background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+
+.location-icon {
+    color:#4285f4;
+    background:#e8f0fe;
+}
+
+.brand-logo {
+    cursor:zoom-in;
+}
+
+/* Image fit and zoom */
+.about-image img,
+.product-card img,
+.project-card img,
+.gallery-grid img {
+    cursor:zoom-in;
+}
+
+.about-image img {
+    object-fit:contain;
+    background:#f5f7f5;
+}
+
+.product-card img,
+.project-card img,
+.gallery-grid img {
+    object-fit:contain;
+    background:#f5f7f5;
+}
+
+/* PROJECT INTRO */
+.project-intro {
+    max-width:760px;
+    margin:0 auto 35px;
+    text-align:center;
+    color:#596b66;
+    line-height:1.8;
+}
+
+/* PROJECT IMAGE GRID */
+.project-card img {
+    width:100%;
+    height:260px;
+    object-fit:contain;
+}
+
+.project-card p {
+    padding:0 20px 18px;
+    color:#596b66;
+    font-size:14px;
+}
+
+/* Gallery */
+.gallery-grid img {
+    object-fit:contain;
+}
+
+/* Lightbox */
+.image-lightbox {
+    display:none;
+    position:fixed;
+    z-index:99999;
+    inset:0;
+    background:rgba(0,0,0,.94);
+    align-items:center;
+    justify-content:center;
+    padding:25px;
+}
+
+.image-lightbox.active {
+    display:flex;
+}
+
+.image-lightbox img {
+    max-width:95%;
+    max-height:88vh;
+    width:auto;
+    height:auto;
+    object-fit:contain;
+    border-radius:8px;
+}
+
+.lightbox-close {
+    position:absolute;
+    top:12px;
+    right:22px;
+    color:#fff;
+    font-size:42px;
+    border:0;
+    background:transparent;
+    cursor:pointer;
+}
+
+.map-pending {
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 14px;
+    border-radius:10px;
+    background:#f1f4f7;
+    color:#536273;
+    font-size:13px;
+}
+
+/* Local SEO */
+.seo-local {
+    padding:40px 5%;
+    background:#fff;
+    color:#596b66;
+    line-height:1.8;
+}
+
+.seo-local h2 {
+    color:#0b4938;
+    margin-bottom:12px;
+}
+
+.seo-local p {
+    margin-bottom:12px;
+}
+
+/* Contact fallback */
+.contact-email {
+    overflow-wrap:anywhere;
+}
+
+@media(max-width:992px) {
     .header-social {
-      display:flex;
-      align-items:center;
-      gap:10px;
+        gap:6px;
     }
     .social-icon {
-      width:42px;
-      height:42px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border-radius:12px;
-      text-decoration:none;
+        width:38px;
+        height:38px;
     }
-    .instagram-icon {
-      color:white;
-      background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
-    }
-    .location-icon {
-      color:#4285f4;
-      background:#e8f0fe;
-      cursor:default;
-    }
+}
 
-    /* Image fitting */
-    .about-image img,
-    .gallery-item img,
-    .project-card img,
-    .product-card img {
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      background:#f5f7f5;
+@media(max-width:768px) {
+    .header-social {
+        gap:5px;
     }
-
-    .project-card img,
-    .gallery-item img {
-      cursor:zoom-in;
-    }
-
-    .work-section {
-      padding:75px 5%;
-      background:#f5f8f4;
-      text-align:center;
-    }
-    .work-section h2 {
-      color:#123b65;
-      margin-bottom:12px;
-    }
-    .work-subtitle {
-      color:#4d6658;
-      margin-bottom:12px;
-    }
-    .work-description {
-      max-width:750px;
-      margin:0 auto 35px;
-      color:#666;
-      line-height:1.7;
-    }
-    .work-grid {
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-      gap:22px;
-      max-width:1200px;
-      margin:auto;
-    }
-    .project-card {
-      background:white;
-      border-radius:16px;
-      overflow:hidden;
-      box-shadow:0 5px 20px rgba(0,0,0,.08);
-      text-align:left;
+    .social-icon {
+        width:34px;
+        height:34px;
     }
     .project-card img {
-      height:240px;
-      object-fit:contain;
-      transition:transform .3s;
+        height:230px;
     }
-    .project-card:hover img {
-      transform:scale(1.03);
-    }
-    .project-card h3 {
-      padding:15px 17px 5px;
-      color:#123b65;
-    }
-    .project-card p {
-      padding:0 17px 18px;
-      color:#666;
-      font-size:14px;
-    }
+}
 
-    /* Image viewer */
-    .image-lightbox {
-      display:none;
-      position:fixed;
-      z-index:99999;
-      inset:0;
-      background:rgba(0,0,0,.93);
-      align-items:center;
-      justify-content:center;
-      padding:25px;
+@media(max-width:380px) {
+    .header-social {
+        gap:3px;
     }
-    .image-lightbox.active {
-      display:flex;
+    .social-icon {
+        width:31px;
+        height:31px;
     }
-    .image-lightbox img {
-      max-width:95%;
-      max-height:90vh;
-      width:auto;
-      height:auto;
-      object-fit:contain;
-      border-radius:8px;
+    .social-icon svg {
+        width:18px;
+        height:18px;
     }
-    .lightbox-close {
-      position:absolute;
-      top:15px;
-      right:25px;
-      color:white;
-      font-size:38px;
-      border:0;
-      background:none;
-      cursor:pointer;
-    }
+}
+</style>
 
-    .map-pending {
-      display:flex;
-      align-items:center;
-      gap:8px;
-      padding:10px 14px;
-      border-radius:10px;
-      background:#f1f4f7;
-      color:#536273;
-      font-size:13px;
-    }
-
-    .seo-local {
-      padding:35px 6%;
-      background:#fff;
-      color:#555;
-      line-height:1.8;
-    }
-    .seo-local h2 {
-      color:#123b65;
-    }
-
-    @media(max-width:768px) {
-      .header-social { gap:6px; }
-      .social-icon { width:36px;height:36px; }
-      .work-grid { grid-template-columns:1fr; }
-      .project-card img { height:230px; }
-    }
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Solar System Renewable Energy Pvt. Ltd.",
-    "telephone":"+919799006872",
-    "email":"srerajasthan283@gmeil.com",
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"Near One Bite, Shivaji Circle",
-      "addressLocality":"Pali",
-      "postalCode":"306401",
-      "addressRegion":"Rajasthan",
-      "addressCountry":"IN"
-    },
-    "areaServed":"Pali, Rajasthan",
-    "description":"Residential, commercial and industrial solar energy solutions."
-  }
-  </script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Solar System Renewable Energy Pvt. Ltd.",
+  "telephone":"+919799006872",
+  "email":"srerajasthan283@gmail.com",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Near One Bite, Shivaji Circle",
+    "addressLocality":"Pali",
+    "postalCode":"306401",
+    "addressRegion":"Rajasthan",
+    "addressCountry":"IN"
+  },
+  "areaServed":"Pali, Rajasthan",
+  "description":"Residential, commercial and industrial solar energy solutions."
+}
+</script>
 </head>
 
 <body>
 
 <!-- HEADER -->
-<header class="header">
-  <div class="container header-container">
+<header class="site-header">
+<div class="container header-container">
 
-    <a href="#home" class="logo">
-      <img src="assets/images/logo.png"
-           alt="Solar System Renewable Energy Pali Logo">
+    <a href="#home" class="brand" aria-label="Solar System Home">
+        <img class="brand-logo"
+             src="assets/images/logo.png"
+             alt="Solar System Renewable Energy Pali Logo"
+             onclick="openLightbox(this); return false;">
+        <span>
+            <strong>Solar System</strong>
+            <small>RENEWABLE ENERGY PVT. LTD.</small>
+        </span>
     </a>
 
-    <nav class="navbar" id="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#products">Products</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Our Work</a>
-      <a href="#contact">Contact</a>
+    <nav class="main-nav" id="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Our Work</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <div class="header-social">
-      <a class="social-icon instagram-icon"
-         href="https://www.instagram.com/sre_solar_pali/"
-         target="_blank" rel="noopener"
-         aria-label="Instagram">
-        <svg width="23" height="23" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2">
-          <rect x="3" y="3" width="18" height="18" rx="5"/>
-          <circle cx="12" cy="12" r="4"/>
-          <circle cx="18" cy="6" r="1" fill="currentColor"/>
-        </svg>
-      </a>
+        <a class="social-icon instagram-icon"
+           href="https://www.instagram.com/sre_solar_pali/"
+           target="_blank" rel="noopener"
+           aria-label="Instagram">
+            <svg width="23" height="23" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+            </svg>
+        </a>
 
-      <span class="social-icon location-icon"
-            title="Google Maps location coming soon">
-        <svg width="23" height="23" viewBox="0 0 24 24"
-             fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
-          <circle cx="12" cy="10" r="2.5"/>
-        </svg>
-      </span>
-
-      <a href="tel:+919799006872" class="btn btn-primary">Call Now</a>
+        <span class="social-icon location-icon"
+              title="Google Maps location coming soon">
+            <svg width="23" height="23" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+        </span>
     </div>
 
-    <button class="menu-toggle" id="menuToggle"
-            aria-label="Open Menu">☰</button>
-  </div>
+    <a href="tel:+919799006872" class="header-call">Call Now</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+    </button>
+
+</div>
 </header>
 
 
 <!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-content">
-    <span class="hero-tag">SMART ENERGY, BRIGHT FUTURE</span>
-    <h1>Power Your Future With Solar Energy</h1>
-    <p>
-      Reliable solar energy solutions for homes, businesses
-      and industries in Pali, Rajasthan.
-    </p>
-    <div class="hero-buttons">
-      <a href="#contact" class="btn btn-primary">Get Free Site Visit</a>
-      <a href="https://wa.me/919799006872"
-         class="btn btn-outline">WhatsApp Us</a>
+<section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+        <span class="hero-tag">SMART ENERGY, BRIGHT FUTURE</span>
+
+        <p class="hero-welcome">WELCOME TO SOLAR SYSTEM RENEWABLE ENERGY</p>
+
+        <h1>
+            Power Your Future
+            <span>With Solar Energy</span>
+        </h1>
+
+        <p class="hero-description">
+            Reliable solar energy solutions for homes, businesses
+            and industries in Pali, Rajasthan.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Get Free Site Visit</a>
+
+            <a href="https://wa.me/919799006872"
+               target="_blank" rel="noopener"
+               class="btn btn-outline">WhatsApp Us</a>
+        </div>
+
+        <div class="hero-highlight">
+            <span>✓</span> Smart Energy, Bright Future
+        </div>
     </div>
-  </div>
 </section>
 
 
 <!-- QUICK FEATURES -->
-<section class="features">
-  <div class="container features-grid">
+<section class="quick-features">
+<div class="container features-grid">
+
     <div class="feature-item">
-      <h3>Residential Solar</h3>
-      <p>Solar solutions for homes.</p>
+        <span>🏠</span>
+        <h3>Residential Solar</h3>
+        <p>Solar solutions for homes.</p>
     </div>
+
     <div class="feature-item">
-      <h3>Commercial Solar</h3>
-      <p>Energy solutions for businesses.</p>
+        <span>🏢</span>
+        <h3>Commercial Solar</h3>
+        <p>Energy solutions for businesses.</p>
     </div>
+
     <div class="feature-item">
-      <h3>Industrial Solar</h3>
-      <p>Solar solutions for industries.</p>
+        <span>🏭</span>
+        <h3>Industrial Solar</h3>
+        <p>Solar solutions for industries.</p>
     </div>
+
     <div class="feature-item">
-      <h3>After-Sales Support</h3>
-      <p>Installation and maintenance assistance.</p>
+        <span>🛠️</span>
+        <h3>After-Sales Support</h3>
+        <p>Installation and maintenance assistance.</p>
     </div>
-  </div>
+
+</div>
 </section>
 
 
 <!-- ABOUT -->
-<section class="about section-padding" id="about">
-  <div class="container about-container">
+<section class="about-section section-padding" id="about">
+<div class="container">
 
-    <div class="about-image">
-      <img src="assets/images/owner.jpg"
-           alt="Solar System Renewable Energy team representative"
-           loading="lazy">
+    <div class="about-grid">
+
+        <div class="about-image">
+            <img src="assets/images/owner.jpg"
+                 alt="Solar System Renewable Energy representative"
+                 loading="lazy"
+                 onclick="openLightbox(this)">
+
+            <div class="about-image-label">
+                Solar System Renewable Energy
+            </div>
+        </div>
+
+        <div class="about-content">
+            <span class="section-tag">ABOUT OUR COMPANY</span>
+
+            <h2>Solar System Renewable Energy Pvt. Ltd.</h2>
+
+            <p>
+                We provide solar energy solutions for residential,
+                commercial and industrial requirements. Our focus is
+                on helping customers understand solar systems and
+                choose suitable solutions for their needs.
+            </p>
+
+            <p>
+                From product selection and site survey to installation
+                guidance and after-sales support, we aim to make the
+                solar journey simple and convenient.
+            </p>
+
+            <p><strong>Location:</strong> Pali, Rajasthan</p>
+
+            <a href="#contact" class="btn btn-primary">Contact Our Team</a>
+        </div>
+
     </div>
 
-    <div class="about-content">
-      <span class="section-tag">ABOUT OUR COMPANY</span>
-      <h2>Solar System Renewable Energy Pvt. Ltd.</h2>
-
-      <p>
-        We provide solar energy solutions for residential,
-        commercial and industrial requirements. Our focus is
-        on helping customers understand solar systems and
-        choose suitable solutions for their needs.
-      </p>
-
-      <p>
-        From product selection and site survey to installation
-        guidance and after-sales support, we aim to make the
-        solar journey simple and convenient.
-      </p>
-
-      <p><strong>Location:</strong> Pali, Rajasthan</p>
-      <a href="#contact" class="btn btn-primary">Contact Our Team</a>
-    </div>
-
-  </div>
+</div>
 </section>
 
 
 <!-- PRODUCTS -->
-<section class="products section-padding" id="products">
-  <div class="container">
+<section class="products-section section-padding" id="products">
+<div class="container">
+
     <div class="section-heading">
-      <span class="section-tag">OUR PRODUCTS</span>
-      <h2>Solar Products & Solutions</h2>
-      <p>Explore solar products for different energy requirements.</p>
+        <span class="section-tag">OUR PRODUCTS</span>
+        <h2>Solar Products & Solutions</h2>
+        <p>Explore solar products for different energy requirements.</p>
     </div>
 
     <div class="products-grid">
 
-      <div class="product-card">
-        <img src="assets/images/products/solar-panel.jpg"
-             alt="Solar panels" loading="lazy">
-        <h3>Solar Panels</h3>
-        <p>Solar panels for different installation requirements.</p>
-      </div>
+        <div class="product-card">
+            <img src="assets/images/products/solar-panel.jpg"
+                 alt="Solar panels" loading="lazy"
+                 onclick="openLightbox(this)">
+            <div class="product-info">
+                <h3>Solar Panels</h3>
+                <p>Solar panels for different installation requirements.</p>
+            </div>
+        </div>
 
-      <div class="product-card">
-        <img src="assets/images/products/solar-inverter.jpg"
-             alt="Solar inverter" loading="lazy">
-        <h3>Solar Inverters</h3>
-        <p>Inverter solutions for solar energy systems.</p>
-      </div>
+        <div class="product-card">
+            <img src="assets/images/products/solar-inverter.jpg"
+                 alt="Solar inverter" loading="lazy"
+                 onclick="openLightbox(this)">
+            <div class="product-info">
+                <h3>Solar Inverters</h3>
+                <p>Inverter solutions for solar energy systems.</p>
+            </div>
+        </div>
 
-      <div class="product-card">
-        <img src="assets/images/products/solar-battery.jpg"
-             alt="Solar battery" loading="lazy">
-        <h3>Solar Batteries</h3>
-        <p>Battery solutions for suitable solar applications.</p>
-      </div>
+        <div class="product-card">
+            <img src="assets/images/products/solar-battery.jpg"
+                 alt="Solar battery" loading="lazy"
+                 onclick="openLightbox(this)">
+            <div class="product-info">
+                <h3>Solar Batteries</h3>
+                <p>Battery solutions for suitable solar applications.</p>
+            </div>
+        </div>
 
-      <div class="product-card">
-        <img src="assets/images/products/mounting-structure.jpg"
-             alt="Solar mounting structure" loading="lazy">
-        <h3>Mounting Structures</h3>
-        <p>Structures and mounting solutions for solar panels.</p>
-      </div>
+        <div class="product-card">
+            <img src="assets/images/products/mounting-structure.jpg"
+                 alt="Solar mounting structure" loading="lazy"
+                 onclick="openLightbox(this)">
+            <div class="product-info">
+                <h3>Mounting Structures</h3>
+                <p>Structures and mounting solutions for solar panels.</p>
+            </div>
+        </div>
 
     </div>
-  </div>
+</div>
 </section>
 
 
 <!-- SERVICES -->
-<section class="services section-padding" id="services">
-  <div class="container">
+<section class="services-section section-padding" id="services">
+<div class="container">
+
     <div class="section-heading">
-      <span class="section-tag">WHAT WE DO</span>
-      <h2>Our Solar Services</h2>
-      <p>Solar energy solutions for different types of properties.</p>
+        <span class="section-tag">WHAT WE DO</span>
+        <h2>Our Solar Services</h2>
+        <p>Solar energy solutions for different types of properties.</p>
     </div>
 
     <div class="services-grid">
 
-      <div class="service-card">
-        <h3>Residential Solar</h3>
-        <p>Rooftop solar solutions for homes and residential buildings.</p>
-      </div>
+        <div class="service-card">
+            <span class="service-icon">🏠</span>
+            <h3>Residential Solar</h3>
+            <p>Rooftop solar solutions for homes and residential buildings.</p>
+        </div>
 
-      <div class="service-card">
-        <h3>Commercial Solar</h3>
-        <p>Solar installation solutions for shops, offices and businesses.</p>
-      </div>
+        <div class="service-card">
+            <span class="service-icon">🏢</span>
+            <h3>Commercial Solar</h3>
+            <p>Solar installation solutions for shops, offices and businesses.</p>
+        </div>
 
-      <div class="service-card">
-        <h3>Industrial Solar</h3>
-        <p>Solar energy solutions for industrial requirements.</p>
-      </div>
+        <div class="service-card">
+            <span class="service-icon">🏭</span>
+            <h3>Industrial Solar</h3>
+            <p>Solar energy solutions for industrial requirements.</p>
+        </div>
 
-      <div class="service-card">
-        <h3>Installation</h3>
-        <p>Site assessment, planning and solar system installation.</p>
-      </div>
+        <div class="service-card">
+            <span class="service-icon">🔧</span>
+            <h3>Installation</h3>
+            <p>Site assessment, planning and solar system installation.</p>
+        </div>
 
-      <div class="service-card">
-        <h3>Maintenance</h3>
-        <p>Solar system maintenance and after-sales assistance.</p>
-      </div>
+        <div class="service-card">
+            <span class="service-icon">🛠️</span>
+            <h3>Maintenance</h3>
+            <p>Solar system maintenance and after-sales assistance.</p>
+        </div>
 
-      <div class="service-card">
-        <h3>Subsidy Guidance</h3>
-        <p>Guidance for eligible customers under applicable solar schemes.</p>
-      </div>
+        <div class="service-card">
+            <span class="service-icon">☀️</span>
+            <h3>Subsidy Guidance</h3>
+            <p>Guidance for eligible customers under applicable solar schemes.</p>
+        </div>
 
     </div>
-  </div>
+</div>
 </section>
 
 
 <!-- PM SURYA GHAR -->
-<section class="subsidy section-padding" id="pm-surya-ghar">
-  <div class="container">
-    <div class="section-heading">
-      <span class="section-tag">GOVERNMENT SOLAR SCHEME</span>
-      <h2>PM Surya Ghar Muft Bijli Yojana</h2>
+<section class="scheme-section section-padding" id="pm-surya-ghar">
+<div class="container">
+
+    <div class="scheme-content">
+
+        <span class="section-tag">GOVERNMENT SOLAR SCHEME</span>
+
+        <h2>PM Surya Ghar Muft Bijli Yojana</h2>
+
+        <p>
+            The PM Surya Ghar scheme supports eligible residential
+            consumers in adopting rooftop solar energy.
+        </p>
+
+        <p>
+            Our team can guide customers with scheme information,
+            registration guidance, documentation and installation
+            related coordination.
+        </p>
+
+        <div class="scheme-benefits">
+
+            <div class="benefit-card">
+                <span>☀️</span>
+                <h3>Clean Energy</h3>
+                <p>Adopt renewable solar energy for your home.</p>
+            </div>
+
+            <div class="benefit-card">
+                <span>📄</span>
+                <h3>Documentation</h3>
+                <p>Guidance with the required application process.</p>
+            </div>
+
+            <div class="benefit-card">
+                <span>🏡</span>
+                <h3>Rooftop Solar</h3>
+                <p>Explore suitable rooftop solar solutions.</p>
+            </div>
+
+        </div>
+
+        <h3>How the Process Works</h3>
+
+        <ol style="text-align:left;max-width:700px;margin:20px auto;">
+            <li>Check eligibility and electricity connection details.</li>
+            <li>Complete registration through the official scheme portal.</li>
+            <li>Choose an eligible vendor and arrange a site survey.</li>
+            <li>Complete installation as per applicable requirements.</li>
+            <li>Inspection, net-metering and commissioning process.</li>
+            <li>Eligible subsidy processing as per government rules.</li>
+        </ol>
+
+        <p class="scheme-note">
+            Scheme eligibility, approval and subsidy are subject to
+            applicable government guidelines and DISCOM procedures.
+        </p>
+
+        <a href="https://pmsuryaghar.gov.in/"
+           target="_blank" rel="noopener"
+           class="btn btn-primary">Official Scheme Portal</a>
+
     </div>
-
-    <div class="subsidy-content">
-      <p>
-        The PM Surya Ghar scheme supports eligible residential
-        consumers in adopting rooftop solar energy.
-      </p>
-
-      <p>
-        Our team can guide customers with basic scheme information,
-        registration guidance, documentation and installation-related
-        coordination.
-      </p>
-
-      <h3>How the Process Works</h3>
-      <ol>
-        <li>Check eligibility and electricity connection details.</li>
-        <li>Complete registration through the official scheme portal.</li>
-        <li>Choose an eligible vendor and arrange a site survey.</li>
-        <li>Complete installation as per applicable requirements.</li>
-        <li>Inspection, net-metering and commissioning process.</li>
-        <li>Eligible subsidy processing as per government rules.</li>
-      </ol>
-
-      <p class="important-note">
-        Scheme eligibility, approval and subsidy are subject to
-        applicable government guidelines and DISCOM procedures.
-      </p>
-
-      <a href="https://pmsuryaghar.gov.in/"
-         target="_blank" rel="noopener" class="btn btn-primary">
-        Official Scheme Portal
-      </a>
-    </div>
-  </div>
+</div>
 </section>
 
 
 <!-- INSTALLATION PROCESS -->
-<section class="process section-padding">
-  <div class="container">
+<section class="process-section section-padding">
+<div class="container">
+
     <div class="section-heading">
-      <span class="section-tag">OUR PROCESS</span>
-      <h2>How We Work</h2>
+        <span class="section-tag">OUR PROCESS</span>
+        <h2>How We Work</h2>
     </div>
 
     <div class="process-grid">
-      <div class="process-card">
-        <span>01</span>
-        <h3>Site Survey</h3>
-        <p>Understand your electricity needs and roof space.</p>
-      </div>
-      <div class="process-card">
-        <span>02</span>
-        <h3>Planning</h3>
-        <p>Discuss suitable system options and requirements.</p>
-      </div>
-      <div class="process-card">
-        <span>03</span>
-        <h3>Installation</h3>
-        <p>Carry out the solar installation process.</p>
-      </div>
-      <div class="process-card">
-        <span>04</span>
-        <h3>Net Metering</h3>
-        <p>Assist with applicable inspection and coordination steps.</p>
-      </div>
+
+        <div class="process-card">
+            <div class="process-number">01</div>
+            <h3>Site Survey</h3>
+            <p>Understand your electricity needs and roof space.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="process-number">02</div>
+            <h3>Planning</h3>
+            <p>Discuss suitable system options and requirements.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="process-number">03</div>
+            <h3>Installation</h3>
+            <p>Carry out the solar installation process.</p>
+        </div>
+
+        <div class="process-card">
+            <div class="process-number">04</div>
+            <h3>Net Metering</h3>
+            <p>Assist with applicable inspection and coordination steps.</p>
+        </div>
+
     </div>
-  </div>
-</section>
-
-
-<!-- OUR WORK -->
-<section class="work-section" id="projects">
-  <span class="section-tag">PROJECT GALLERY</span>
-  <h2>Our Work in Action</h2>
-  <h3 class="work-subtitle">A Glimpse of Solar Installation Projects</h3>
-
-  <p class="work-description">
-    Explore selected sample visuals of residential, commercial
-    and other solar installation solutions. These images are
-    illustrative and are not a complete list of completed projects.
-  </p>
-
-  <div class="work-grid">
-
-    <div class="project-card">
-      <img src="assets/images/projects/1.jpg"
-           alt="Solar installation project sample 1"
-           loading="lazy" onclick="openLightbox(this)">
-      <h3>Solar Installation</h3>
-      <p>Sample project visual</p>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/images/projects/2.jpg"
-           alt="Solar installation project sample 2"
-           loading="lazy" onclick="openLightbox(this)">
-      <h3>Rooftop Solar</h3>
-      <p>Sample project visual</p>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/images/projects/3.jpg"
-           alt="Solar installation project sample 3"
-           loading="lazy" onclick="openLightbox(this)">
-      <h3>Solar Energy Solutions</h3>
-      <p>Sample project visual</p>
-    </div>
-
-  </div>
+</div>
 </section>
 
 
 <!-- FREE SITE VISIT -->
-<section class="site-visit section-padding">
-  <div class="container">
+<section class="free-survey-section">
+<div class="container survey-content">
+
+    <span class="survey-tag">FREE SITE VISIT</span>
+
     <h2>Plan Your Solar Installation</h2>
+
     <p>
-      Share your electricity bill and rooftop photo on WhatsApp
-      to discuss your solar requirements.
+        Share your electricity bill and rooftop photo on WhatsApp
+        to discuss your solar requirements.
     </p>
-    <p>Free site visit available in nearby areas, subject to confirmation.</p>
+
+    <p>
+        Free site visit available in nearby areas, subject to confirmation.
+    </p>
 
     <a href="https://wa.me/919799006872?text=Hello%2C%20I%20want%20to%20know%20about%20solar%20installation."
-       class="btn btn-primary" target="_blank" rel="noopener">
-      Send WhatsApp Enquiry
-    </a>
-  </div>
+       target="_blank" rel="noopener"
+       class="btn">Send WhatsApp Enquiry</a>
+
+    <p class="survey-note">
+        Solar solutions for homes, businesses and industries.
+    </p>
+
+</div>
+</section>
+
+
+<!-- OUR WORK -->
+<section class="projects-section section-padding" id="projects">
+<div class="container">
+
+    <div class="section-heading">
+        <span class="section-tag">PROJECT GALLERY</span>
+        <h2>Our Work in Action</h2>
+        <p>A Glimpse of Solar Installation Projects</p>
+    </div>
+
+    <p class="project-intro">
+        Explore selected sample visuals of residential, commercial
+        and other solar installation solutions. These images are
+        illustrative and are not a complete list of completed projects.
+    </p>
+
+    <div class="projects-grid" id="projectsGrid">
+        <!-- Numbered photos 1.jpg to 30.jpg are loaded automatically -->
+    </div>
+
+</div>
 </section>
 
 
 <!-- CONTACT -->
-<section class="contact section-padding" id="contact">
-  <div class="container">
+<section class="contact-section section-padding" id="contact">
+<div class="container">
+
     <div class="section-heading">
-      <span class="section-tag">GET IN TOUCH</span>
-      <h2>Contact Solar System Renewable Energy</h2>
-      <p>Tell us about your solar energy requirements.</p>
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2>Contact Solar System Renewable Energy</h2>
+        <p>Tell us about your solar energy requirements.</p>
     </div>
 
-    <div class="contact-container">
+    <div class="contact-grid">
 
-      <div class="contact-info">
-        <h3>Contact Details</h3>
+        <div class="contact-info">
 
-        <p><strong>Company:</strong><br>
-          Solar System Renewable Energy Pvt. Ltd.</p>
+            <h3>Contact Details</h3>
+            <h4>Smart Energy, Bright Future</h4>
 
-        <p><strong>Phone:</strong><br>
-          <a href="tel:+919799006872">+91 97990 06872</a></p>
+            <div class="contact-item">
+                <span>🏢</span>
+                <div>
+                    <strong>Company</strong>
+                    <p>Solar System Renewable Energy Pvt. Ltd.</p>
+                </div>
+            </div>
 
-        <p><strong>Email:</strong><br>
-          <a href="mailto:srerajasthan283@gmeil.com">
-            srerajasthan283@gmail.com
-          </a>
-        </p>
+            <div class="contact-item">
+                <span>📞</span>
+                <div>
+                    <strong>Phone</strong>
+                    <p><a href="tel:+919799006872">+91 97990 06872</a></p>
+                </div>
+            </div>
 
-        <p><strong>Address:</strong><br>
-          Near One Bite, Shivaji Circle,<br>
-          Pali – 306401, Rajasthan</p>
+            <div class="contact-item">
+                <span>✉️</span>
+                <div>
+                    <strong>Email</strong>
+                    <p class="contact-email">
+                        <a href="mailto:srerajasthan283@gmail.com">
+                            srerajasthan283@gmail.com
+                        </a>
+                    </p>
+                </div>
+            </div>
 
-        <p><strong>Instagram:</strong><br>
-          <a href="https://www.instagram.com/sre_solar_pali/"
-             target="_blank" rel="noopener">@SRE_SOLAR_PALI</a>
-        </p>
+            <div class="contact-item">
+                <span>📍</span>
+                <div>
+                    <strong>Address</strong>
+                    <p>
+                        Near One Bite, Shivaji Circle,<br>
+                        Pali – 306401, Rajasthan
+                    </p>
+                </div>
+            </div>
 
-        <div class="map-pending">
-          Google Maps Location – Coming Soon
+            <div class="contact-item">
+                <span>📷</span>
+                <div>
+                    <strong>Instagram</strong>
+                    <p>
+                        <a href="https://www.instagram.com/sre_solar_pali/"
+                           target="_blank" rel="noopener">
+                            @SRE_SOLAR_PALI
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="map-pending">
+                📍 Google Maps Location – Coming Soon
+            </div>
+
+            <a href="https://wa.me/919799006872"
+               target="_blank" rel="noopener"
+               class="btn btn-whatsapp">WhatsApp Us</a>
+
         </div>
-      </div>
 
-      <form id="contactForm" class="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="tel" id="phone" placeholder="Mobile Number"
-               maxlength="10" required>
-        <input type="text" id="city" placeholder="City / Area" required>
 
-        <select id="requirement" required>
-          <option value="">Select Requirement</option>
-          <option>Residential Solar</option>
-          <option>Commercial Solar</option>
-          <option>Industrial Solar</option>
-          <option>Solar Panels</option>
-          <option>Solar Inverter / Battery</option>
-          <option>PM Surya Ghar Scheme Guidance</option>
-          <option>Maintenance</option>
-          <option>Other Enquiry</option>
-        </select>
+        <div class="contact-form-box">
 
-        <textarea id="message" placeholder="Your Message"></textarea>
+            <h3>Send an Enquiry</h3>
+            <p>Fill in your details and contact us on WhatsApp.</p>
 
-        <button type="submit" class="btn btn-primary">
-          Send Enquiry on WhatsApp
-        </button>
-      </form>
+            <form id="contactForm">
+
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Mobile Number</label>
+                    <input type="tel" id="phone"
+                           placeholder="10 digit mobile number"
+                           maxlength="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City / Area</label>
+                    <input type="text" id="city"
+                           placeholder="Enter city or area" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="requirement">Your Requirement</label>
+
+                    <select id="requirement" required>
+                        <option value="">Select Requirement</option>
+                        <option>Residential Solar</option>
+                        <option>Commercial Solar</option>
+                        <option>Industrial Solar</option>
+                        <option>Solar Panels</option>
+                        <option>Solar Inverter / Battery</option>
+                        <option>PM Surya Ghar Scheme Guidance</option>
+                        <option>Maintenance</option>
+                        <option>Other Enquiry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message"
+                              placeholder="Write your message"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit">
+                    Send Enquiry on WhatsApp
+                </button>
+
+            </form>
+        </div>
 
     </div>
-  </div>
+</div>
 </section>
 
 
-<!-- LOCAL SEO CONTENT -->
+<!-- LOCAL SEO -->
 <section class="seo-local">
-  <h2>Solar Services in Pali Rajasthan</h2>
-  <p>
-    Solar System Renewable Energy Pvt. Ltd. provides solar panel
-    installation and renewable energy solutions in Pali, Rajasthan.
-    Our services include residential rooftop solar, commercial solar,
-    industrial solar, solar inverter solutions, solar batteries,
-    mounting structures and maintenance assistance.
-  </p>
-  <p>
-    If you are searching for a solar company in Pali, solar panel
-    installation near you, rooftop solar in Pali or PM Surya Ghar
-    scheme guidance, contact our team to discuss your requirements.
-  </p>
+<div class="container">
+
+    <h2>Solar Services in Pali Rajasthan</h2>
+
+    <p>
+        Solar System Renewable Energy Pvt. Ltd. provides solar panel
+        installation and renewable energy solutions in Pali, Rajasthan.
+        Our services include residential rooftop solar, commercial solar,
+        industrial solar, solar inverter solutions, solar batteries,
+        mounting structures and maintenance assistance.
+    </p>
+
+    <p>
+        If you are searching for a solar company in Pali, solar panel
+        installation near you, rooftop solar in Pali or PM Surya Ghar
+        scheme guidance, contact our team to discuss your requirements.
+    </p>
+
+</div>
 </section>
 
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <h3>Solar System Renewable Energy Pvt. Ltd.</h3>
-    <p>Smart Energy, Bright Future</p>
-    <p>Pali, Rajasthan – 306401</p>
-    <p>Phone: +91 97990 06872</p>
-    <p>
-      <a href="https://www.instagram.com/sre_solar_pali/"
-         target="_blank" rel="noopener">Instagram</a>
-    </p>
-    <p class="copyright">
-      © <span id="currentYear"></span>
-      Solar System Renewable Energy Pvt. Ltd. All Rights Reserved.
-    </p>
-  </div>
+<footer class="site-footer">
+<div class="container">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>Solar System Renewable Energy Pvt. Ltd.</h2>
+            <p>SMART ENERGY, BRIGHT FUTURE</p>
+            <span>Powering a cleaner tomorrow.</span>
+            <p>
+                Solar solutions for homes, businesses and industries
+                in Pali, Rajasthan.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Our Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Pali – 306401, Rajasthan</p>
+            <a href="tel:+919799006872">+91 97990 06872</a>
+            <a href="mailto:srerajasthan283@gmail.com">
+                srerajasthan283@gmail.com
+            </a>
+            <a href="https://www.instagram.com/sre_solar_pali/"
+               target="_blank" rel="noopener">Instagram</a>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer-bottom">
+    © <span id="currentYear"></span>
+    Solar System Renewable Energy Pvt. Ltd. All Rights Reserved.
+</div>
 </footer>
 
 
 <!-- FLOATING WHATSAPP -->
-<a class="whatsapp-float"
+<a class="floating-whatsapp"
    href="https://wa.me/919799006872"
    target="_blank" rel="noopener"
    aria-label="Chat on WhatsApp">
-  WhatsApp
+    WhatsApp
 </a>
 
 
 <!-- IMAGE LIGHTBOX -->
 <div class="image-lightbox" id="imageLightbox"
      onclick="closeLightbox(event)">
-  <button class="lightbox-close" onclick="closeLightbox()"
-          aria-label="Close">&times;</button>
-  <img id="lightboxImage" src="" alt="Expanded project photo">
+
+    <button class="lightbox-close"
+            onclick="closeLightbox()"
+            aria-label="Close image">&times;</button>
+
+    <img id="lightboxImage" src="" alt="Expanded image">
 </div>
 
 
 <script>
-  // Mobile navigation
-  const menuToggle = document.getElementById("menuToggle");
-  const navbar = document.getElementById("navbar");
+/* MOBILE NAVIGATION */
+const menuToggle = document.getElementById("menuToggle");
+const navbar = document.getElementById("navbar");
 
-  if (menuToggle && navbar) {
+if (menuToggle && navbar) {
     menuToggle.addEventListener("click", () => {
-      navbar.classList.toggle("active");
+        navbar.classList.toggle("active");
     });
 
     navbar.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navbar.classList.remove("active");
-      });
+        link.addEventListener("click", () => {
+            navbar.classList.remove("active");
+        });
     });
-  }
+}
 
-  // Current year
-  document.getElementById("currentYear").textContent =
+
+/* CURRENT YEAR */
+document.getElementById("currentYear").textContent =
     new Date().getFullYear();
 
-  // Image zoom
-  function openLightbox(image) {
+
+/* IMAGE LIGHTBOX */
+function openLightbox(image) {
     const viewer = document.getElementById("imageLightbox");
     const viewerImage = document.getElementById("lightboxImage");
 
-    viewerImage.src = image.src;
-    viewer.classList.add("active");
-  }
+    viewerImage.src = image.currentSrc || image.src;
+    viewerImage.alt = image.alt || "Expanded image";
 
-  function closeLightbox(event) {
-    if (event && event.target.id !== "imageLightbox") return;
+    viewer.classList.add("active");
+    document.body.style.overflow = "hidden";
+}
+
+function closeLightbox(event) {
+    if (event && event.target.id !== "imageLightbox") {
+        return;
+    }
 
     document.getElementById("imageLightbox").classList.remove("active");
-  }
+    document.body.style.overflow = "";
+}
 
-  document.addEventListener("keydown", event => {
+document.addEventListener("keydown", event => {
     if (event.key === "Escape") {
-      document.getElementById("imageLightbox").classList.remove("active");
+        document.getElementById("imageLightbox").classList.remove("active");
+        document.body.style.overflow = "";
     }
-  });
+});
 
-  // WhatsApp enquiry form
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+/* AUTOMATIC NUMBERED PROJECT PHOTOS */
+const projectsGrid = document.getElementById("projectsGrid");
+
+for (let i = 1; i <= 30; i++) {
+    const card = document.createElement("article");
+    card.className = "project-card";
+
+    const img = document.createElement("img");
+    img.src = `assets/images/projects/${i}.jpg`;
+    img.alt = `Solar installation sample ${i}`;
+    img.loading = "lazy";
+    img.onclick = function() {
+        openLightbox(this);
+    };
+
+    const heading = document.createElement("h3");
+    heading.textContent = "Solar Installation";
+
+    const description = document.createElement("p");
+    description.textContent = "Sample project visual";
+
+    img.onerror = function() {
+        card.remove();
+    };
+
+    card.appendChild(img);
+    card.appendChild(heading);
+    card.appendChild(description);
+    projectsGrid.appendChild(card);
+}
+
+
+/* WHATSAPP ENQUIRY */
+document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     const name = document.getElementById("name").value.trim();
@@ -728,20 +996,43 @@
     const message = document.getElementById("message").value.trim();
 
     if (!/^[6-9]\d{9}$/.test(phone)) {
-      alert("Please enter a valid 10-digit mobile number.");
-      return;
+        alert("Please enter a valid 10-digit mobile number.");
+        return;
     }
 
     const text =
-      "Hello Solar System Renewable Energy Pvt. Ltd.%0A%0A" +
-      "Name: " + encodeURIComponent(name) + "%0A" +
-      "Mobile: " + encodeURIComponent(phone) + "%0A" +
-      "City/Area: " + encodeURIComponent(city) + "%0A" +
-      "Requirement: " + encodeURIComponent(requirement) + "%0A" +
-      "Message: " + encodeURIComponent(message);
+        "Hello Solar System Renewable Energy Pvt. Ltd.\n\n" +
+        "Name: " + name + "\n" +
+        "Mobile: " + phone + "\n" +
+        "City/Area: " + city + "\n" +
+        "Requirement: " + requirement + "\n" +
+        "Message: " + message;
 
-    window.open("https://wa.me/919799006872?text=" + text, "_blank");
-  });
+    const url = "https://wa.me/919799006872?text=" +
+        encodeURIComponent(text);
+
+    window.open(url, "_blank");
+});
+
+
+/* HEADER SCROLL EFFECT */
+window.addEventListener("scroll", () => {
+    const header = document.querySelector(".site-header");
+
+    if (header) {
+        header.classList.toggle("scrolled", window.scrollY > 30);
+    }
+});
+
+
+/* IMAGE ERROR HANDLING */
+document.querySelectorAll("img:not(#lightboxImage)").forEach(img => {
+    if (img.dataset.projectImage) return;
+
+    img.addEventListener("error", function() {
+        this.classList.add("image-error");
+    });
+});
 </script>
 
 </body>
