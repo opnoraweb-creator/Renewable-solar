@@ -1332,3 +1332,25 @@ img.image-error {
     object-fit: cover !important;
     object-position: center 35%;
 }
+
+/* Owner Photo Box Size Fix */
+.about-image {
+    width: 100% !important;
+    max-width: 340px !important;
+    height: auto !important;
+    min-height: unset !important;
+    aspect-ratio: 3 / 4;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.about-image img {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center;
+    display: block;
+}
