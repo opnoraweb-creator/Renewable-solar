@@ -1,1082 +1,748 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Company in Pali Rajasthan | Solar System Renewable Energy Pvt. Ltd.</title>
 
-    <title>Solar Company in Pali Rajasthan | Solar System Renewable Energy Pvt. Ltd.</title>
+  <meta name="description" content="Solar System Renewable Energy Pvt. Ltd. provides residential, commercial and industrial solar panel installation, rooftop solar, solar inverter and battery solutions in Pali, Rajasthan. Get in touch for a site visit.">
 
-    <meta name="description" content="Looking for solar panels near me in Pali Rajasthan? Solar System Renewable Energy Pvt. Ltd. offers residential, commercial and industrial solar installation, rooftop solar, PM Surya Ghar scheme assistance and free site visits in nearby areas.">
+  <meta name="keywords" content="Solar Company in Pali, Solar Panel Pali Rajasthan, Solar Installation Near Me, Rooftop Solar Pali, Residential Solar Pali, Commercial Solar Pali, Industrial Solar Rajasthan, PM Surya Ghar Pali, Solar Inverter Pali">
 
-    <meta name="keywords" content="Solar in Pali, Solar Company in Pali Rajasthan, Solar Panel Near Me, Near Me Solar Installation, Best Solar Shop in Pali, Solar Panel Dealer Pali, Free Site Visit Solar Pali, PM Surya Ghar Yojana Pali, Free Subsidy Solar Plant Pali, Rooftop Solar Pali, Residential Solar Pali, Commercial Solar Pali, Industrial Solar Rajasthan, Solar Inverter Pali, Solar Battery Pali, Solar Installation Near Me, Renewable Energy Pali">
+  <meta name="author" content="Solar System Renewable Energy Pvt. Ltd.">
+  <meta name="theme-color" content="#ffffff">
 
-    <meta name="author" content="Solar System Renewable Energy Pvt. Ltd.">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="theme-color" content="#092f26">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/favicon.png">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Solar System Renewable Energy Pvt. Ltd. | Solar in Pali">
-    <meta property="og:description" content="Residential, commercial and industrial solar solutions in Pali Rajasthan. Free site visit in nearby areas.">
-    <meta property="og:image" content="assets/images/solar-hero.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
-    <link rel="icon" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Local Business SEO Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Solar System Renewable Energy Pvt. Ltd.",
-      "description": "Solar energy solutions, rooftop solar installation, residential, commercial and industrial solar services in Pali Rajasthan.",
-      "telephone": "+919799006872",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Near One Bite, Shivaji Circle",
-        "addressLocality": "Pali",
-        "addressRegion": "Rajasthan",
-        "postalCode": "306401",
-        "addressCountry": "IN"
-      },
-      "areaServed": {
-        "@type": "Place",
-        "name": "Pali, Rajasthan"
-      },
-      "knowsAbout": [
-        "Solar Panel Installation",
-        "Rooftop Solar",
-        "Residential Solar",
-        "Commercial Solar",
-        "Industrial Solar",
-        "Solar Inverters",
-        "Solar Batteries",
-        "PM Surya Ghar Yojana"
-      ]
+  <style>
+    /* Header social links */
+    .header-social {
+      display:flex;
+      align-items:center;
+      gap:10px;
     }
-    </script>
+    .social-icon {
+      width:42px;
+      height:42px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:12px;
+      text-decoration:none;
+    }
+    .instagram-icon {
+      color:white;
+      background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+    }
+    .location-icon {
+      color:#4285f4;
+      background:#e8f0fe;
+      cursor:default;
+    }
 
-    <script src="js/main.js" defer></script>
-    <script src="js/contact.js" defer></script>
+    /* Image fitting */
+    .about-image img,
+    .gallery-item img,
+    .project-card img,
+    .product-card img {
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      background:#f5f7f5;
+    }
 
+    .project-card img,
+    .gallery-item img {
+      cursor:zoom-in;
+    }
+
+    .work-section {
+      padding:75px 5%;
+      background:#f5f8f4;
+      text-align:center;
+    }
+    .work-section h2 {
+      color:#123b65;
+      margin-bottom:12px;
+    }
+    .work-subtitle {
+      color:#4d6658;
+      margin-bottom:12px;
+    }
+    .work-description {
+      max-width:750px;
+      margin:0 auto 35px;
+      color:#666;
+      line-height:1.7;
+    }
+    .work-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:22px;
+      max-width:1200px;
+      margin:auto;
+    }
+    .project-card {
+      background:white;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 5px 20px rgba(0,0,0,.08);
+      text-align:left;
+    }
+    .project-card img {
+      height:240px;
+      object-fit:contain;
+      transition:transform .3s;
+    }
+    .project-card:hover img {
+      transform:scale(1.03);
+    }
+    .project-card h3 {
+      padding:15px 17px 5px;
+      color:#123b65;
+    }
+    .project-card p {
+      padding:0 17px 18px;
+      color:#666;
+      font-size:14px;
+    }
+
+    /* Image viewer */
+    .image-lightbox {
+      display:none;
+      position:fixed;
+      z-index:99999;
+      inset:0;
+      background:rgba(0,0,0,.93);
+      align-items:center;
+      justify-content:center;
+      padding:25px;
+    }
+    .image-lightbox.active {
+      display:flex;
+    }
+    .image-lightbox img {
+      max-width:95%;
+      max-height:90vh;
+      width:auto;
+      height:auto;
+      object-fit:contain;
+      border-radius:8px;
+    }
+    .lightbox-close {
+      position:absolute;
+      top:15px;
+      right:25px;
+      color:white;
+      font-size:38px;
+      border:0;
+      background:none;
+      cursor:pointer;
+    }
+
+    .map-pending {
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      border-radius:10px;
+      background:#f1f4f7;
+      color:#536273;
+      font-size:13px;
+    }
+
+    .seo-local {
+      padding:35px 6%;
+      background:#fff;
+      color:#555;
+      line-height:1.8;
+    }
+    .seo-local h2 {
+      color:#123b65;
+    }
+
+    @media(max-width:768px) {
+      .header-social { gap:6px; }
+      .social-icon { width:36px;height:36px; }
+      .work-grid { grid-template-columns:1fr; }
+      .project-card img { height:230px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Solar System Renewable Energy Pvt. Ltd.",
+    "telephone":"+919799006872",
+    "email":"srerajasthan283@gmeil.com",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Near One Bite, Shivaji Circle",
+      "addressLocality":"Pali",
+      "postalCode":"306401",
+      "addressRegion":"Rajasthan",
+      "addressCountry":"IN"
+    },
+    "areaServed":"Pali, Rajasthan",
+    "description":"Residential, commercial and industrial solar energy solutions."
+  }
+  </script>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-container">
 
-<header class="site-header" id="header">
+    <a href="#home" class="logo">
+      <img src="assets/images/logo.png"
+           alt="Solar System Renewable Energy Pali Logo">
+    </a>
 
-    <div class="container header-container">
+    <nav class="navbar" id="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-        <a href="#home" class="brand">
+    <div class="header-social">
+      <a class="social-icon instagram-icon"
+         href="https://www.instagram.com/sre_solar_pali/"
+         target="_blank" rel="noopener"
+         aria-label="Instagram">
+        <svg width="23" height="23" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="18" cy="6" r="1" fill="currentColor"/>
+        </svg>
+      </a>
 
-            <img src="assets/images/logo.png"
-                 alt="Solar System Renewable Energy Company Logo">
+      <span class="social-icon location-icon"
+            title="Google Maps location coming soon">
+        <svg width="23" height="23" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+          <circle cx="12" cy="10" r="2.5"/>
+        </svg>
+      </span>
 
-            <span>
-                <strong>SOLAR SYSTEM</strong>
-                <small>RENEWABLE ENERGY PVT. LTD.</small>
-            </span>
-
-        </a>
-
-        <button class="menu-toggle"
-                id="menuToggle"
-                aria-label="Open navigation"
-                aria-expanded="false">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
-
-        <nav class="main-nav" id="mainNav">
-
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#products">Products</a>
-            <a href="#services">Services</a>
-            <a href="#scheme">Solar Yojana</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-
-        </nav>
-
-        <!-- SOCIAL AND LOCATION ICONS -->
-
-        <div class="header-social">
-
-            <!-- Instagram link will be added later -->
-            <span class="social-icon instagram-icon"
-                  aria-label="Instagram profile coming soon">
-
-                <svg viewBox="0 0 24 24"
-                     width="23"
-                     height="23"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2"
-                     stroke-linecap="round"
-                     stroke-linejoin="round">
-
-                    <rect x="3" y="3" width="18" height="18" rx="5"/>
-                    <circle cx="12" cy="12" r="4"/>
-                    <circle cx="18" cy="6" r="1" fill="currentColor"/>
-
-                </svg>
-
-            </span>
-
-            <!-- Google Maps link will be added later -->
-            <span class="social-icon location-icon"
-                  aria-label="Google Maps location coming soon">
-
-                <svg viewBox="0 0 24 24"
-                     width="23"
-                     height="23"
-                     fill="none"
-                     stroke="currentColor"
-                     stroke-width="2"
-                     stroke-linecap="round"
-                     stroke-linejoin="round">
-
-                    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
-                    <circle cx="12" cy="10" r="2.5"/>
-
-                </svg>
-
-            </span>
-
-        </div>
-
-        <a href="tel:+919799006872" class="header-call">
-            Call Now
-        </a>
-
+      <a href="tel:+919799006872" class="btn btn-primary">Call Now</a>
     </div>
 
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open Menu">☰</button>
+  </div>
 </header>
 
 
-<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="hero-tag">SMART ENERGY, BRIGHT FUTURE</span>
+    <h1>Power Your Future With Solar Energy</h1>
+    <p>
+      Reliable solar energy solutions for homes, businesses
+      and industries in Pali, Rajasthan.
+    </p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary">Get Free Site Visit</a>
+      <a href="https://wa.me/919799006872"
+         class="btn btn-outline">WhatsApp Us</a>
+    </div>
+  </div>
+</section>
 
-<!-- ================= HERO ================= -->
 
-<section class="hero-section" id="home">
+<!-- QUICK FEATURES -->
+<section class="features">
+  <div class="container features-grid">
+    <div class="feature-item">
+      <h3>Residential Solar</h3>
+      <p>Solar solutions for homes.</p>
+    </div>
+    <div class="feature-item">
+      <h3>Commercial Solar</h3>
+      <p>Energy solutions for businesses.</p>
+    </div>
+    <div class="feature-item">
+      <h3>Industrial Solar</h3>
+      <p>Solar solutions for industries.</p>
+    </div>
+    <div class="feature-item">
+      <h3>After-Sales Support</h3>
+      <p>Installation and maintenance assistance.</p>
+    </div>
+  </div>
+</section>
 
-    <div class="hero-overlay"></div>
 
-    <div class="container hero-content">
+<!-- ABOUT -->
+<section class="about section-padding" id="about">
+  <div class="container about-container">
 
-        <span class="hero-tag">
-            SMART ENERGY • BRIGHT FUTURE
-        </span>
+    <div class="about-image">
+      <img src="assets/images/owner.jpg"
+           alt="Solar System Renewable Energy team representative"
+           loading="lazy">
+    </div>
 
-        <p class="hero-welcome">
-            WELCOME TO SOLAR SYSTEM RENEWABLE ENERGY
+    <div class="about-content">
+      <span class="section-tag">ABOUT OUR COMPANY</span>
+      <h2>Solar System Renewable Energy Pvt. Ltd.</h2>
+
+      <p>
+        We provide solar energy solutions for residential,
+        commercial and industrial requirements. Our focus is
+        on helping customers understand solar systems and
+        choose suitable solutions for their needs.
+      </p>
+
+      <p>
+        From product selection and site survey to installation
+        guidance and after-sales support, we aim to make the
+        solar journey simple and convenient.
+      </p>
+
+      <p><strong>Location:</strong> Pali, Rajasthan</p>
+      <a href="#contact" class="btn btn-primary">Contact Our Team</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PRODUCTS -->
+<section class="products section-padding" id="products">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-tag">OUR PRODUCTS</span>
+      <h2>Solar Products & Solutions</h2>
+      <p>Explore solar products for different energy requirements.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <div class="product-card">
+        <img src="assets/images/products/solar-panel.jpg"
+             alt="Solar panels" loading="lazy">
+        <h3>Solar Panels</h3>
+        <p>Solar panels for different installation requirements.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/products/solar-inverter.jpg"
+             alt="Solar inverter" loading="lazy">
+        <h3>Solar Inverters</h3>
+        <p>Inverter solutions for solar energy systems.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/products/solar-battery.jpg"
+             alt="Solar battery" loading="lazy">
+        <h3>Solar Batteries</h3>
+        <p>Battery solutions for suitable solar applications.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/products/mounting-structure.jpg"
+             alt="Solar mounting structure" loading="lazy">
+        <h3>Mounting Structures</h3>
+        <p>Structures and mounting solutions for solar panels.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="services section-padding" id="services">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-tag">WHAT WE DO</span>
+      <h2>Our Solar Services</h2>
+      <p>Solar energy solutions for different types of properties.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <h3>Residential Solar</h3>
+        <p>Rooftop solar solutions for homes and residential buildings.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Commercial Solar</h3>
+        <p>Solar installation solutions for shops, offices and businesses.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Industrial Solar</h3>
+        <p>Solar energy solutions for industrial requirements.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Installation</h3>
+        <p>Site assessment, planning and solar system installation.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Maintenance</h3>
+        <p>Solar system maintenance and after-sales assistance.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Subsidy Guidance</h3>
+        <p>Guidance for eligible customers under applicable solar schemes.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PM SURYA GHAR -->
+<section class="subsidy section-padding" id="pm-surya-ghar">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-tag">GOVERNMENT SOLAR SCHEME</span>
+      <h2>PM Surya Ghar Muft Bijli Yojana</h2>
+    </div>
+
+    <div class="subsidy-content">
+      <p>
+        The PM Surya Ghar scheme supports eligible residential
+        consumers in adopting rooftop solar energy.
+      </p>
+
+      <p>
+        Our team can guide customers with basic scheme information,
+        registration guidance, documentation and installation-related
+        coordination.
+      </p>
+
+      <h3>How the Process Works</h3>
+      <ol>
+        <li>Check eligibility and electricity connection details.</li>
+        <li>Complete registration through the official scheme portal.</li>
+        <li>Choose an eligible vendor and arrange a site survey.</li>
+        <li>Complete installation as per applicable requirements.</li>
+        <li>Inspection, net-metering and commissioning process.</li>
+        <li>Eligible subsidy processing as per government rules.</li>
+      </ol>
+
+      <p class="important-note">
+        Scheme eligibility, approval and subsidy are subject to
+        applicable government guidelines and DISCOM procedures.
+      </p>
+
+      <a href="https://pmsuryaghar.gov.in/"
+         target="_blank" rel="noopener" class="btn btn-primary">
+        Official Scheme Portal
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- INSTALLATION PROCESS -->
+<section class="process section-padding">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-tag">OUR PROCESS</span>
+      <h2>How We Work</h2>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card">
+        <span>01</span>
+        <h3>Site Survey</h3>
+        <p>Understand your electricity needs and roof space.</p>
+      </div>
+      <div class="process-card">
+        <span>02</span>
+        <h3>Planning</h3>
+        <p>Discuss suitable system options and requirements.</p>
+      </div>
+      <div class="process-card">
+        <span>03</span>
+        <h3>Installation</h3>
+        <p>Carry out the solar installation process.</p>
+      </div>
+      <div class="process-card">
+        <span>04</span>
+        <h3>Net Metering</h3>
+        <p>Assist with applicable inspection and coordination steps.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- OUR WORK -->
+<section class="work-section" id="projects">
+  <span class="section-tag">PROJECT GALLERY</span>
+  <h2>Our Work in Action</h2>
+  <h3 class="work-subtitle">A Glimpse of Solar Installation Projects</h3>
+
+  <p class="work-description">
+    Explore selected sample visuals of residential, commercial
+    and other solar installation solutions. These images are
+    illustrative and are not a complete list of completed projects.
+  </p>
+
+  <div class="work-grid">
+
+    <div class="project-card">
+      <img src="assets/images/projects/1.jpg"
+           alt="Solar installation project sample 1"
+           loading="lazy" onclick="openLightbox(this)">
+      <h3>Solar Installation</h3>
+      <p>Sample project visual</p>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/projects/2.jpg"
+           alt="Solar installation project sample 2"
+           loading="lazy" onclick="openLightbox(this)">
+      <h3>Rooftop Solar</h3>
+      <p>Sample project visual</p>
+    </div>
+
+    <div class="project-card">
+      <img src="assets/images/projects/3.jpg"
+           alt="Solar installation project sample 3"
+           loading="lazy" onclick="openLightbox(this)">
+      <h3>Solar Energy Solutions</h3>
+      <p>Sample project visual</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FREE SITE VISIT -->
+<section class="site-visit section-padding">
+  <div class="container">
+    <h2>Plan Your Solar Installation</h2>
+    <p>
+      Share your electricity bill and rooftop photo on WhatsApp
+      to discuss your solar requirements.
+    </p>
+    <p>Free site visit available in nearby areas, subject to confirmation.</p>
+
+    <a href="https://wa.me/919799006872?text=Hello%2C%20I%20want%20to%20know%20about%20solar%20installation."
+       class="btn btn-primary" target="_blank" rel="noopener">
+      Send WhatsApp Enquiry
+    </a>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact section-padding" id="contact">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-tag">GET IN TOUCH</span>
+      <h2>Contact Solar System Renewable Energy</h2>
+      <p>Tell us about your solar energy requirements.</p>
+    </div>
+
+    <div class="contact-container">
+
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+
+        <p><strong>Company:</strong><br>
+          Solar System Renewable Energy Pvt. Ltd.</p>
+
+        <p><strong>Phone:</strong><br>
+          <a href="tel:+919799006872">+91 97990 06872</a></p>
+
+        <p><strong>Email:</strong><br>
+          <a href="mailto:srerajasthan283@gmeil.com">
+            srerajasthan283@gmail.com
+          </a>
         </p>
 
-        <h1>
-            Power Your Future With
-            <span>Clean Solar Energy</span>
-        </h1>
+        <p><strong>Address:</strong><br>
+          Near One Bite, Shivaji Circle,<br>
+          Pali – 306401, Rajasthan</p>
 
-        <p class="hero-description">
-            घर हो, दुकान हो या बड़ा उद्योग —
-            Pali Rajasthan में हर जरूरत के लिए
-            भरोसेमंद Solar Energy Solutions.
-            अब स्वच्छ ऊर्जा की ओर स्मार्ट कदम बढ़ाएं।
+        <p><strong>Instagram:</strong><br>
+          <a href="https://www.instagram.com/sre_solar_pali/"
+             target="_blank" rel="noopener">@SRE_SOLAR_PALI</a>
         </p>
 
-        <div class="hero-buttons">
-
-            <a href="#services" class="btn btn-primary">
-                Explore Services
-            </a>
-
-            <a href="#contact" class="btn btn-outline">
-                Contact Now
-            </a>
-
+        <div class="map-pending">
+          Google Maps Location – Coming Soon
         </div>
+      </div>
 
-        <div class="hero-highlight">
-            <span>✓</span>
-            Free Site Visit in Nearby Areas
-        </div>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="tel" id="phone" placeholder="Mobile Number"
+               maxlength="10" required>
+        <input type="text" id="city" placeholder="City / Area" required>
+
+        <select id="requirement" required>
+          <option value="">Select Requirement</option>
+          <option>Residential Solar</option>
+          <option>Commercial Solar</option>
+          <option>Industrial Solar</option>
+          <option>Solar Panels</option>
+          <option>Solar Inverter / Battery</option>
+          <option>PM Surya Ghar Scheme Guidance</option>
+          <option>Maintenance</option>
+          <option>Other Enquiry</option>
+        </select>
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button type="submit" class="btn btn-primary">
+          Send Enquiry on WhatsApp
+        </button>
+      </form>
 
     </div>
-
+  </div>
 </section>
 
 
-<!-- ================= QUICK FEATURES ================= -->
-
-<section class="quick-features">
-
-    <div class="container features-grid">
-
-        <div class="feature-item">
-            <span>☀️</span>
-            <h3>Clean Energy</h3>
-            <p>Smart Renewable Solutions</p>
-        </div>
-
-        <div class="feature-item">
-            <span>🏠</span>
-            <h3>Rooftop Solar</h3>
-            <p>Residential Solutions</p>
-        </div>
-
-        <div class="feature-item">
-            <span>🔧</span>
-            <h3>Expert Installation</h3>
-            <p>Professional Team</p>
-        </div>
-
-        <div class="feature-item">
-            <span>📍</span>
-            <h3>Free Site Visit</h3>
-            <p>Nearby Areas in Pali</p>
-        </div>
-
-    </div>
-
+<!-- LOCAL SEO CONTENT -->
+<section class="seo-local">
+  <h2>Solar Services in Pali Rajasthan</h2>
+  <p>
+    Solar System Renewable Energy Pvt. Ltd. provides solar panel
+    installation and renewable energy solutions in Pali, Rajasthan.
+    Our services include residential rooftop solar, commercial solar,
+    industrial solar, solar inverter solutions, solar batteries,
+    mounting structures and maintenance assistance.
+  </p>
+  <p>
+    If you are searching for a solar company in Pali, solar panel
+    installation near you, rooftop solar in Pali or PM Surya Ghar
+    scheme guidance, contact our team to discuss your requirements.
+  </p>
 </section>
 
 
-<!-- ================= ABOUT ================= -->
-
-<section class="about-section section-padding" id="about">
-
-    <div class="container about-grid">
-
-        <div class="about-image">
-
-            <img src="assets/images/about-solar.jpg"
-                 alt="Solar System Renewable Energy solar installation in Pali Rajasthan">
-
-            <div class="about-image-label">
-                Smart Energy, Bright Future
-            </div>
-
-        </div>
-
-        <div class="about-content">
-
-            <span class="section-tag">WHO WE ARE</span>
-
-            <h2>
-                About Solar System Renewable Energy
-            </h2>
-
-            <p>
-                Solar System Renewable Energy Pvt. Ltd. Pali,
-                Rajasthan में Solar Energy Solutions प्रदान करने
-                वाली कंपनी है।
-            </p>
-
-            <p>
-                हमारा उद्देश्य घरों, दुकानों, commercial buildings
-                और industries को स्वच्छ एवं renewable energy
-                अपनाने में सहायता करना है।
-            </p>
-
-            <p>
-                हम Solar Panel Installation, Solar Inverters,
-                Batteries, Rooftop Solar, Site Survey,
-                Documentation और After-Sales Support में सहायता
-                प्रदान करते हैं।
-            </p>
-
-            <p>
-                Pali और आसपास के क्षेत्रों में Free Site Visit
-                की सुविधा उपलब्ध है। अपनी solar requirement के
-                अनुसार हमसे संपर्क करें।
-            </p>
-
-            <a href="#contact" class="btn btn-primary">
-                Contact Our Team
-            </a>
-
-        </div>
-
-    </div>
-
-    <!-- ABOUT PHOTO GALLERY -->
-
-    <div class="container about-gallery">
-
-        <div class="section-heading">
-            <span class="section-tag">OUR COMPANY</span>
-            <h2>Our Work & Team</h2>
-            <p>Company, team और solar installation की झलक।</p>
-        </div>
-
-        <div class="gallery-grid">
-
-            <img src="assets/images/gallery/gallery-1.jpg"
-                 alt="Solar installation work by Solar System Pali">
-
-            <img src="assets/images/gallery/gallery-2.jpg"
-                 alt="Solar panel project in Pali">
-
-            <img src="assets/images/gallery/gallery-3.jpg"
-                 alt="Solar company team">
-
-            <img src="assets/images/gallery/gallery-4.jpg"
-                 alt="Renewable energy installation">
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PRODUCTS ================= -->
-
-<section class="products-section section-padding" id="products">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">OUR PRODUCTS</span>
-
-            <h2>Solar Products & Equipment in Pali</h2>
-
-            <p>
-                Quality solar equipment for residential,
-                commercial and industrial applications.
-            </p>
-
-        </div>
-
-        <div class="products-grid">
-
-            <article class="product-card">
-
-                <img src="assets/images/products/solar-panels.jpg"
-                     alt="Solar panels in Pali Rajasthan">
-
-                <div class="product-info">
-                    <h3>Solar Panels</h3>
-                    <p>Solar modules for rooftop and commercial applications.</p>
-                </div>
-
-            </article>
-
-            <article class="product-card">
-
-                <img src="assets/images/products/solar-inverter.jpg"
-                     alt="Solar inverter dealer Pali">
-
-                <div class="product-info">
-                    <h3>Solar Inverters</h3>
-                    <p>Solar power conversion and energy management solutions.</p>
-                </div>
-
-            </article>
-
-            <article class="product-card">
-
-                <img src="assets/images/products/solar-battery.jpg"
-                     alt="Solar battery Pali Rajasthan">
-
-                <div class="product-info">
-                    <h3>Solar Batteries</h3>
-                    <p>Energy storage solutions for suitable solar systems.</p>
-                </div>
-
-            </article>
-
-            <article class="product-card">
-
-                <img src="assets/images/products/solar-structure.jpg"
-                     alt="Solar mounting structures Pali">
-
-                <div class="product-info">
-                    <h3>Mounting Structures</h3>
-                    <p>Strong mounting structures and solar accessories.</p>
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= SERVICES ================= -->
-
-<section class="services-section section-padding" id="services">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">WHAT WE DO</span>
-
-            <h2>Our Solar Services in Pali</h2>
-
-            <p>
-                Complete solar installation and renewable
-                energy solutions.
-            </p>
-
-        </div>
-
-        <div class="services-grid">
-
-            <article class="service-card">
-                <span class="service-icon">🏠</span>
-                <h3>Residential Solar</h3>
-                <p>
-                    Rooftop solar installation for homes,
-                    with suitable panels and structures.
-                </p>
-            </article>
-
-            <article class="service-card">
-                <span class="service-icon">🏢</span>
-                <h3>Commercial Solar</h3>
-                <p>
-                    Solar solutions for shops, offices,
-                    commercial buildings and businesses.
-                </p>
-            </article>
-
-            <article class="service-card">
-                <span class="service-icon">🏭</span>
-                <h3>Industrial Solar</h3>
-                <p>
-                    Solar energy solutions for factories,
-                    industries and large installations.
-                </p>
-            </article>
-
-            <article class="service-card">
-                <span class="service-icon">📋</span>
-                <h3>Subsidy Support</h3>
-                <p>
-                    PM Surya Ghar scheme guidance,
-                    documentation and application assistance.
-                </p>
-            </article>
-
-            <article class="service-card">
-                <span class="service-icon">🔧</span>
-                <h3>Solar Installation</h3>
-                <p>
-                    Professional installation, mounting
-                    structures, panels and electrical wiring.
-                </p>
-            </article>
-
-            <article class="service-card">
-                <span class="service-icon">🛠️</span>
-                <h3>Maintenance & Support</h3>
-                <p>
-                    Solar system maintenance and after-sales assistance.
-                </p>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PM SURYA GHAR ================= -->
-
-<section class="scheme-section section-padding" id="scheme">
-
-    <div class="container">
-
-        <div class="scheme-content">
-
-            <span class="section-tag">
-                GOVERNMENT SOLAR SCHEME
-            </span>
-
-            <h2>PM Surya Ghar Muft Bijli Yojana</h2>
-
-            <p>
-                Pali Rajasthan में eligible households को
-                Rooftop Solar Scheme की जानकारी और application
-                process में सहायता।
-            </p>
-
-            <div class="scheme-benefits">
-
-                <div class="benefit-card">
-                    <span>☀️</span>
-                    <h3>Solar Guidance</h3>
-                    <p>सही Solar System चुनने में सहायता।</p>
-                </div>
-
-                <div class="benefit-card">
-                    <span>📄</span>
-                    <h3>Documentation</h3>
-                    <p>Application और जरूरी documents में सहायता।</p>
-                </div>
-
-                <div class="benefit-card">
-                    <span>⚡</span>
-                    <h3>Net Metering</h3>
-                    <p>DISCOM process और net-metering guidance।</p>
-                </div>
-
-            </div>
-
-            <a href="#contact" class="btn btn-primary">
-                Get Scheme Assistance
-            </a>
-
-            <p class="scheme-note">
-                Eligibility और scheme benefits संबंधित
-                Government guidelines एवं DISCOM approval
-                के अनुसार होंगे।
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ELIGIBILITY ================= -->
-
-<section class="services-section section-padding" id="eligibility">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">SCHEME INFORMATION</span>
-
-            <h2>Who Can Apply?</h2>
-
-            <p>
-                PM Surya Ghar Yojana के लिए eligibility
-                संबंधित official government guidelines के अनुसार होती है।
-            </p>
-
-        </div>
-
-        <div class="services-grid">
-
-            <article class="service-card">
-                <span class="service-icon">🏡</span>
-                <h3>Domestic Connection</h3>
-                <p>घर का eligible domestic electricity connection.</p>
-            </article>
-
-            <article class="service-card">
-                <span class="service-icon">☀️</span>
-                <h3>Roof Space</h3>
-                <p>Solar installation के लिए suitable rooftop space.</p>
-            </article>
-
-            <article class="service-card">
-                <span class="service-icon">📑</span>
-                <h3>Required Documents</h3>
-                <p>Electricity bill और आवश्यक documents.</p>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= INSTALLATION PROCESS ================= -->
-
-<section class="process-section section-padding" id="process">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">HOW WE WORK</span>
-
-            <h2>Solar Plant Installation Process</h2>
-
-            <p>
-                Site survey से installation और commissioning तक सहायता।
-            </p>
-
-        </div>
-
-        <div class="process-grid">
-
-            <article class="process-card">
-                <span class="process-number">01</span>
-                <h3>Site Survey</h3>
-                <p>Roof, load और shadow checking.</p>
-            </article>
-
-            <article class="process-card">
-                <span class="process-number">02</span>
-                <h3>Planning</h3>
-                <p>Correct capacity selection और system planning.</p>
-            </article>
-
-            <article class="process-card">
-                <span class="process-number">03</span>
-                <h3>Installation</h3>
-                <p>Mounting structure, panels और wiring.</p>
-            </article>
-
-            <article class="process-card">
-                <span class="process-number">04</span>
-                <h3>Net Metering</h3>
-                <p>DISCOM coordination और commissioning support.</p>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FREE SITE VISIT ================= -->
-
-<section class="free-survey-section" id="free-survey">
-
-    <div class="container survey-content">
-
-        <span class="survey-tag">
-            SPECIAL CUSTOMER SERVICE
-        </span>
-
-        <h2>
-            Free Solar Site Visit in Pali
-        </h2>
-
-        <p>
-            अपनी Electricity Bill और Roof की Photo
-            WhatsApp पर भेजें। हमारी टीम आपको सही Solar Plant
-            Capacity और Estimated Savings समझाने में सहायता करेगी।
-        </p>
-
-        <a href="https://wa.me/919799006872?text=Namaste%2C%20mujhe%20Pali%20mein%20free%20solar%20site%20visit%20ke%20liye%20enquiry%20karni%20hai."
-           class="btn btn-whatsapp"
-           target="_blank"
-           rel="noopener">
-
-            WhatsApp पर पूछें
-
-        </a>
-
-        <p class="survey-note">
-            Free site visit nearby areas में उपलब्ध है।
-            Location confirmation के लिए संपर्क करें।
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= PROJECTS ================= -->
-
-<section class="projects-section section-padding" id="projects">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">OUR WORK</span>
-
-            <h2>Our Solar Projects in Rajasthan</h2>
-
-            <p>
-                हमारे वास्तविक Solar Installation Work की झलक।
-            </p>
-
-        </div>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-
-                <img src="assets/images/projects/project-1.jpg"
-                     alt="Residential rooftop solar installation Pali">
-
-                <h3>Residential Solar</h3>
-
-            </div>
-
-            <div class="project-card">
-
-                <img src="assets/images/projects/project-2.jpg"
-                     alt="Commercial solar installation Rajasthan">
-
-                <h3>Commercial Solar</h3>
-
-            </div>
-
-            <div class="project-card">
-
-                <img src="assets/images/projects/project-3.jpg"
-                     alt="Industrial solar installation Rajasthan">
-
-                <h3>Industrial Solar</h3>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= GALLERY ================= -->
-
-<section class="gallery-section section-padding" id="gallery">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">PHOTO GALLERY</span>
-
-            <h2>Solar Installation Gallery</h2>
-
-            <p>
-                Solar installation, products और team की तस्वीरें।
-            </p>
-
-        </div>
-
-        <div class="gallery-grid">
-
-            <img src="assets/images/gallery/gallery-1.jpg"
-                 alt="Solar panel installation Pali">
-
-            <img src="assets/images/gallery/gallery-2.jpg"
-                 alt="Solar rooftop project">
-
-            <img src="assets/images/gallery/gallery-3.jpg"
-                 alt="Solar installation team">
-
-            <img src="assets/images/gallery/gallery-4.jpg"
-                 alt="Renewable energy project">
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="contact-section section-padding" id="contact">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">GET IN TOUCH</span>
-
-            <h2>Contact Solar Company in Pali</h2>
-
-            <p>
-                Solar installation, solar products या
-                Free Site Visit के लिए संपर्क करें।
-            </p>
-
-        </div>
-
-        <div class="contact-grid">
-
-            <div class="contact-info">
-
-                <h3>SOLAR SYSTEM</h3>
-
-                <h4>RENEWABLE ENERGY PVT. LTD.</h4>
-
-                <div class="contact-item">
-
-                    <span>📍</span>
-
-                    <div>
-                        <strong>Our Address</strong>
-                        <p>
-                            Near One Bite, Shivaji Circle,
-                            Pali - 306401, Rajasthan.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <span>📞</span>
-
-                    <div>
-                        <strong>Phone Number</strong>
-                        <p>+91 97990 06872</p>
-                    </div>
-
-                </div>
-
-                <div class="contact-item">
-
-                    <span>💬</span>
-
-                    <div>
-                        <strong>WhatsApp</strong>
-                        <p>Solar Enquiry & Free Site Visit</p>
-                    </div>
-
-                </div>
-
-                <!-- Google Maps real URL will be added later -->
-
-                <span class="btn btn-primary">
-                    Google Maps Location Coming Soon
-                </span>
-
-            </div>
-
-
-            <!-- ENQUIRY FORM -->
-
-            <div class="contact-form-box">
-
-                <h3>Send Your Enquiry</h3>
-
-                <p>
-                    Fill in your details. We will connect on WhatsApp.
-                </p>
-
-                <form id="enquiryForm">
-
-                    <div class="form-group">
-
-                        <label for="customerName">
-                            Your Name
-                        </label>
-
-                        <input type="text"
-                               id="customerName"
-                               name="name"
-                               placeholder="Enter your name"
-                               autocomplete="name"
-                               required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="customerPhone">
-                            Mobile Number
-                        </label>
-
-                        <input type="tel"
-                               id="customerPhone"
-                               name="phone"
-                               placeholder="Enter mobile number"
-                               pattern="[0-9]{10}"
-                               maxlength="10"
-                               inputmode="numeric"
-                               autocomplete="tel"
-                               required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="customerLocation">
-                            City / Area
-                        </label>
-
-                        <input type="text"
-                               id="customerLocation"
-                               name="location"
-                               placeholder="Enter your location"
-                               required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="solarType">
-                            Solar Requirement
-                        </label>
-
-                        <select id="solarType"
-                                name="requirement"
-                                required>
-
-                            <option value="">Select Requirement</option>
-
-                            <option value="Residential Solar">
-                                Residential Solar
-                            </option>
-
-                            <option value="Commercial Solar">
-                                Commercial Solar
-                            </option>
-
-                            <option value="Industrial Solar">
-                                Industrial Solar
-                            </option>
-
-                            <option value="PM Surya Ghar Yojana">
-                                PM Surya Ghar Yojana
-                            </option>
-
-                            <option value="Solar Products">
-                                Solar Products
-                            </option>
-
-                            <option value="Free Site Visit">
-                                Free Site Visit
-                            </option>
-
-                        </select>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="customerMessage">
-                            Your Message
-                        </label>
-
-                        <textarea id="customerMessage"
-                                  name="message"
-                                  rows="4"
-                                  placeholder="Tell us about your solar requirement"></textarea>
-
-                    </div>
-
-                    <button type="submit"
-                            class="btn btn-primary form-submit">
-
-                        Send Enquiry on WhatsApp
-
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="site-footer">
-
-    <div class="container footer-content">
-
-        <div class="footer-brand">
-
-            <img src="assets/images/logo.png"
-                 alt="Solar System Renewable Energy Logo"
-                 width="85">
-
-            <h2>SOLAR SYSTEM</h2>
-
-            <p>RENEWABLE ENERGY PVT. LTD.</p>
-
-            <span>Smart Energy, Bright Future</span>
-
-            <p>
-                Bringing clean and renewable energy
-                solutions for a brighter future.
-            </p>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h3>Quick Links</h3>
-
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#products">Products</a>
-            <a href="#services">Services</a>
-            <a href="#scheme">Solar Yojana</a>
-            <a href="#contact">Contact</a>
-
-        </div>
-
-        <div class="footer-contact">
-
-            <h3>Contact Us</h3>
-
-            <p>Pali, Rajasthan - 306401</p>
-
-            <a href="tel:+919799006872">
-                +91 97990 06872
-            </a>
-
-            <a href="https://wa.me/919799006872"
-               target="_blank"
-               rel="noopener">
-                WhatsApp Us
-            </a>
-
-            <!-- Instagram URL will be added later -->
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-        <p>
-            © <span id="currentYear"></span>
-            Solar System Renewable Energy Pvt. Ltd.
-            All Rights Reserved.
-        </p>
-
-    </div>
-
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <h3>Solar System Renewable Energy Pvt. Ltd.</h3>
+    <p>Smart Energy, Bright Future</p>
+    <p>Pali, Rajasthan – 306401</p>
+    <p>Phone: +91 97990 06872</p>
+    <p>
+      <a href="https://www.instagram.com/sre_solar_pali/"
+         target="_blank" rel="noopener">Instagram</a>
+    </p>
+    <p class="copyright">
+      © <span id="currentYear"></span>
+      Solar System Renewable Energy Pvt. Ltd. All Rights Reserved.
+    </p>
+  </div>
 </footer>
 
 
-<!-- ================= FLOATING WHATSAPP ================= -->
-
-<a href="https://wa.me/919799006872?text=Namaste%2C%20mujhe%20Pali%20mein%20solar%20installation%20ke%20baare%20mein%20jaankari%20chahiye."
-   class="floating-whatsapp"
-   target="_blank"
-   rel="noopener"
-   aria-label="Chat with us on WhatsApp">
-
-    <span>WhatsApp</span>
-
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp-float"
+   href="https://wa.me/919799006872"
+   target="_blank" rel="noopener"
+   aria-label="Chat on WhatsApp">
+  WhatsApp
 </a>
 
+
+<!-- IMAGE LIGHTBOX -->
+<div class="image-lightbox" id="imageLightbox"
+     onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()"
+          aria-label="Close">&times;</button>
+  <img id="lightboxImage" src="" alt="Expanded project photo">
+</div>
+
+
+<script>
+  // Mobile navigation
+  const menuToggle = document.getElementById("menuToggle");
+  const navbar = document.getElementById("navbar");
+
+  if (menuToggle && navbar) {
+    menuToggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+
+    navbar.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navbar.classList.remove("active");
+      });
+    });
+  }
+
+  // Current year
+  document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
+
+  // Image zoom
+  function openLightbox(image) {
+    const viewer = document.getElementById("imageLightbox");
+    const viewerImage = document.getElementById("lightboxImage");
+
+    viewerImage.src = image.src;
+    viewer.classList.add("active");
+  }
+
+  function closeLightbox(event) {
+    if (event && event.target.id !== "imageLightbox") return;
+
+    document.getElementById("imageLightbox").classList.remove("active");
+  }
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+      document.getElementById("imageLightbox").classList.remove("active");
+    }
+  });
+
+  // WhatsApp enquiry form
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const city = document.getElementById("city").value.trim();
+    const requirement = document.getElementById("requirement").value;
+    const message = document.getElementById("message").value.trim();
+
+    if (!/^[6-9]\d{9}$/.test(phone)) {
+      alert("Please enter a valid 10-digit mobile number.");
+      return;
+    }
+
+    const text =
+      "Hello Solar System Renewable Energy Pvt. Ltd.%0A%0A" +
+      "Name: " + encodeURIComponent(name) + "%0A" +
+      "Mobile: " + encodeURIComponent(phone) + "%0A" +
+      "City/Area: " + encodeURIComponent(city) + "%0A" +
+      "Requirement: " + encodeURIComponent(requirement) + "%0A" +
+      "Message: " + encodeURIComponent(message);
+
+    window.open("https://wa.me/919799006872?text=" + text, "_blank");
+  });
+</script>
 
 </body>
 </html>
