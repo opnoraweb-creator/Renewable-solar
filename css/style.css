@@ -1291,3 +1291,29 @@ img.image-error {
     opacity: 0.65;
 }
 
+/* HEADER SOCIAL ICONS */
+
+.header-social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.instagram-icon {
+    color: #ffffff;
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.location-icon {
+    color: #4285f4;
+    background: #e8f0fe;
+}
