@@ -1317,3 +1317,18 @@ img.image-error {
     color: #4285f4;
     background: #e8f0fe;
 }
+
+/* Owner Photo Display Fix */
+.about-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.about-image img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 35%;
+}
