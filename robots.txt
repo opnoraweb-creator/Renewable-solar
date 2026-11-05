@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://s-r-e-solar-pali.digiprofiles.in/sitemap.xml
